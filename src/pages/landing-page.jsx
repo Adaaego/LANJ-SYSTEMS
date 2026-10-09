@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Products from "../components/Products";
 import Target from "../components/Target";
+import Faq from "../components/Faq";
 
 
 const LandingPage = () =>{
@@ -13,6 +14,7 @@ const LandingPage = () =>{
             <About/>
             <Products/>
             <Target/>
+            <Faq/>
             
 
         </div>
