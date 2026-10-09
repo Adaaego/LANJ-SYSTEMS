@@ -4,6 +4,7 @@ import About from "../components/About";
 import Products from "../components/Products";
 import Target from "../components/Target";
 import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 
 
 const LandingPage = () =>{
@@ -15,6 +16,7 @@ const LandingPage = () =>{
             <Products/>
             <Target/>
             <Faq/>
+            <Footer/>
             
 
         </div>
