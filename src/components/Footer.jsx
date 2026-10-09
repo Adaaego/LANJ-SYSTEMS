@@ -17,7 +17,7 @@ const Footer = ({
       id="contact"
       className="w-full bg-[#fafafa] border-t border-[#e5e5e5] scroll-mt-20"
     >
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 py-16">
+      <div className="w-full mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
 
         {/* Main Footer Content */}
         <motion.div
@@ -50,7 +50,9 @@ const Footer = ({
             {/* Tagline */}
             <p
               className="text-sm leading-5 text-[#666666] max-w-xs"
-              style={{ fontFamily: "Figtree, sans-serif" }}
+              style={{
+                fontFamily: "Figtree, sans-serif",
+              }}
             >
               {tagline}
             </p>
@@ -58,10 +60,12 @@ const Footer = ({
             {/* Location */}
             <p
               className="flex items-center gap-1.5 text-sm leading-5 text-[#666666] mt-4"
-              style={{ fontFamily: "Figtree, sans-serif" }}
+              style={{
+                fontFamily: "Figtree, sans-serif",
+              }}
             >
               <MapPin
-                className="w-4 h-4"
+                className="w-4 h-4 shrink-0"
                 aria-hidden="true"
               />
               {location}
@@ -74,8 +78,10 @@ const Footer = ({
             {/* Email Address */}
             <a
               href={`mailto:${email}`}
-              className="text-sm text-[#666666] hover:text-[#202020] transition-colors duration-150"
-              style={{ fontFamily: "Figtree, sans-serif" }}
+              className="text-sm text-[#666666] hover:text-[#202020] transition-colors duration-150 whitespace-nowrap"
+              style={{
+                fontFamily: "Figtree, sans-serif",
+              }}
             >
               {email}
             </a>
@@ -131,7 +137,9 @@ const Footer = ({
         >
           <p
             className="text-sm text-[#666666] text-center md:text-left"
-            style={{ fontFamily: "Figtree, sans-serif" }}
+            style={{
+              fontFamily: "Figtree, sans-serif",
+            }}
           >
             {copyrightText}
           </p>

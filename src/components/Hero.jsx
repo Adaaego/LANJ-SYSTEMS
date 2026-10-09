@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const Hero = ({
@@ -17,7 +16,6 @@ const Hero = ({
     >
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-stretch">
-
           {/* Left Content Card */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -86,16 +84,16 @@ const Hero = ({
               ease: [0.645, 0.045, 0.355, 1],
               delay: 0.2,
             }}
-            className="min-w-0 bg-white rounded-[32px] lg:rounded-[40px] min-h-[350px] lg:min-h-[550px] overflow-hidden"
-            style={{
-              backgroundImage: "url('/landpinpg.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
+            className="relative min-w-0 bg-white rounded-[32px] lg:rounded-[40px] min-h-[350px] lg:min-h-[550px] overflow-hidden"
             role="img"
-            aria-label="LANJ Systems hero image"
-          />
+            aria-label="LANJ Systems control room"
+          >
+            <img
+              src="/controlroomheroimg.jpeg"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover grayscale"
+            />
+          </motion.div>
         </div>
       </div>
     </section>

@@ -96,14 +96,14 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="w-full min-h-screen bg-gradient-to-br from-white via-white to-gray-100/30 flex items-center justify-center py-24 px-6 lg:px-8 scroll-mt-20"
+      className="w-full min-h-screen bg-gradient-to-br from-white via-white to-gray-100/30 flex items-center justify-center py-24 px-6 md:px-10 lg:px-16 xl:px-20 scroll-mt-20"
     >
-      <div className="max-w-7xl w-full mx-auto">
+      <div className="w-full mx-auto">
 
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2
-            className="text-[40px] leading-tight font-normal text-[#202020] mb-6 tracking-tight"
+            className="text-3xl sm:text-[40px] leading-tight font-normal text-[#202020] mb-6 tracking-tight"
             style={{
               fontFamily: "Figtree, sans-serif",
               fontWeight: 400,
@@ -114,7 +114,7 @@ const Products = () => {
         </div>
 
         {/* Product Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left Product Description */}
           <motion.div
@@ -131,7 +131,7 @@ const Products = () => {
                 duration: 0.2,
               },
             }}
-            className="space-y-8"
+            className="space-y-8 min-w-0"
           >
             <div className="space-y-6">
 
@@ -194,7 +194,7 @@ const Products = () => {
           </motion.div>
 
           {/* Right Product Overview */}
-          <div className="relative min-h-[350px] lg:h-[500px] flex items-center justify-center">
+          <div className="relative min-w-0 min-h-[350px] lg:h-[500px] flex items-center justify-center">
             <ProductOverviewCard />
           </div>
 
