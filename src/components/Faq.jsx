@@ -27,7 +27,6 @@ const defaultFAQs = [
   },
 ];
 
-// Main FAQ Component
 const Faq = ({
   title = "Frequently asked questions",
   faqs = defaultFAQs,
@@ -42,10 +41,10 @@ const Faq = ({
   return (
     <section
       id="faq"
-      className="w-full py-24 px-6 lg:px-8 bg-white scroll-mt-20"
+      className="w-full py-24 px-6 md:px-10 lg:px-16 xl:px-20 bg-white scroll-mt-20"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
+      <div className="w-full mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
 
           {/* Section Heading */}
           <div className="lg:col-span-4">
@@ -61,7 +60,7 @@ const Faq = ({
           </div>
 
           {/* FAQ Questions */}
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-8 min-w-0">
             {faqs.map((faq, index) => {
               const isOpen = openIndex === index;
               const answerId = `${faqId}-answer-${index}`;

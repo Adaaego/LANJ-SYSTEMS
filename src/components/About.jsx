@@ -64,11 +64,11 @@ const About = () => {
       id="about"
       className="w-full overflow-hidden bg-white scroll-mt-20"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 pt-16">
-        <div className="grid grid-cols-12 gap-5 gap-y-16">
+      <div className="w-full mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left Content */}
-          <div className="col-span-12 md:col-span-6 relative z-10">
+          <div className="relative z-10 min-w-0">
 
             {/* Animated Section Label */}
             <div
@@ -160,7 +160,7 @@ const About = () => {
 
           {/* Right Animated Data Visualization */}
           <div
-            className="col-span-12 md:col-span-6"
+            className="relative min-w-0"
             aria-hidden="true"
           >
             <div className="relative w-full h-[416px] overflow-hidden">
