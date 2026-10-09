@@ -1,12 +1,11 @@
-import Nav from "./components/NavBar"
-
+import LandingPage from "./pages/landing-page"
 
 function App() {
 
   return (
     <div>
 
-      <Nav/>
+      <LandingPage/>
     </div>
              
   )
