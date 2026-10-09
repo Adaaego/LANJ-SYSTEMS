@@ -2,6 +2,7 @@ import Nav from "../components/NavBar"
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Products from "../components/Products";
+import Target from "../components/Target";
 
 
 const LandingPage = () =>{
@@ -11,6 +12,7 @@ const LandingPage = () =>{
             <Hero/>
             <About/>
             <Products/>
+            <Target/>
             
 
         </div>
