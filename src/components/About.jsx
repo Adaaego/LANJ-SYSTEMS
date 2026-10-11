@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -23,9 +22,7 @@ const generateDataPoints = () => {
     const direction = i % 2 === 0 ? "down" : "up";
     const height = Math.floor(random() * 120) + 88;
     const top =
-      direction === "down"
-        ? random() * 150 + 250
-        : random() * 100 - 80;
+      direction === "down" ? random() * 150 + 250 : random() * 100 - 80;
 
     points.push({
       id: i,
@@ -64,18 +61,15 @@ const About = () => {
       id="about"
       className="w-full overflow-hidden bg-white scroll-mt-20"
     >
-      <div className="w-full mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-24">
+      <div className="w-full mx-auto px-6 md:px-10 lg:px-16 xl:px-20 pt-24 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
-
           {/* Left Content */}
           <div className="relative z-10 min-w-0">
-
             {/* Animated Section Label */}
             <div
               className="relative h-6 inline-flex items-center font-mono uppercase text-xs text-black mb-12 px-2"
               style={{
-                fontFamily:
-                  "'Geist Mono', ui-monospace, monospace",
+                fontFamily: "'Geist Mono', ui-monospace, monospace",
               }}
             >
               <div className="flex items-center gap-0.5 overflow-hidden">
@@ -94,9 +88,7 @@ const About = () => {
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{
-                    opacity: typingComplete
-                      ? [1, 0, 1, 0]
-                      : 0,
+                    opacity: typingComplete ? [1, 0, 1, 0] : 0,
                   }}
                   transition={{
                     duration: 1,
@@ -118,9 +110,9 @@ const About = () => {
             >
               LANJ Systems is a technology company{" "}
               <span className="opacity-40">
-                focused on turning fragmented, unreliable and
-                underused information into structured data,
-                dependable systems and actionable intelligence.
+                focused on turning fragmented, unreliable and underused
+                information into structured data, dependable systems and
+                actionable intelligence.
               </span>
             </h2>
 
@@ -132,16 +124,15 @@ const About = () => {
               }}
             >
               <p className="text-lg leading-6 text-[#202020] opacity-60 m-0">
-                We take messy, fragmented processes and turn them
-                into clean, structured, queryable data that helps
-                organisations make better decisions.
+                We take messy, fragmented processes and turn them into clean,
+                structured, queryable data that helps organisations make better
+                decisions.
               </p>
 
               <p className="text-lg leading-6 text-[#202020] opacity-60 m-0">
-                We don't just build software to solve isolated
-                problems. We build systems that improve how
-                industries operate, how resources are managed
-                and how economies grow.
+                We don't just build software to solve isolated problems. We
+                build systems that improve how industries operate, how resources
+                are managed and how economies grow.
               </p>
             </div>
 
@@ -152,21 +143,16 @@ const About = () => {
             >
               <span className="relative z-10 flex items-center gap-1">
                 Explore OpsEye
-
                 <ArrowRight className="w-4 h-4 -mr-1 transition-transform duration-150 group-hover:translate-x-1" />
               </span>
             </a>
           </div>
 
           {/* Right Animated Data Visualization */}
-          <div
-            className="relative min-w-0"
-            aria-hidden="true"
-          >
+          <div className="relative min-w-0" aria-hidden="true">
             <div className="relative w-full h-[416px] overflow-hidden">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[680px] h-[416px] pointer-events-none">
                 <div className="relative w-full h-full">
-
                   {dataPoints.map((point) => (
                     <motion.div
                       key={point.id}
@@ -178,11 +164,7 @@ const About = () => {
                         isVisible
                           ? {
                               opacity: [0, 1, 1],
-                              height: [
-                                0,
-                                point.height,
-                                point.height,
-                              ],
+                              height: [0, point.height, point.height],
                             }
                           : {}
                       }
@@ -204,11 +186,7 @@ const About = () => {
                       {/* Animated Dot */}
                       <motion.div
                         initial={{ opacity: 0 }}
-                        animate={
-                          isVisible
-                            ? { opacity: [0, 1] }
-                            : {}
-                        }
+                        animate={isVisible ? { opacity: [0, 1] } : {}}
                         transition={{
                           duration: 0.3,
                           delay: point.delay + 1.7,
@@ -223,12 +201,10 @@ const About = () => {
                       />
                     </motion.div>
                   ))}
-
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
