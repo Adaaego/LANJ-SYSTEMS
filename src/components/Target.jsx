@@ -266,12 +266,12 @@ const Target = ({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-[960px] mx-auto px-6 lg:px-8 mt-20"
+        className="w-full max-w-[1400px] mx-auto px-6 lg:px-11 mt-24"
         style={FONT}
       >
-        <div className="grid gap-8 md:grid-cols-[1fr_1.4fr] md:gap-16">
+        <div className="grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-12">
           <div>
-            <h3 className="text-3xl sm:text-[34px] leading-[1.15] font-medium tracking-[-0.025em] text-[#111]">
+            <h3 className="text-[40px] leading-[1.1] font-medium tracking-[-0.03em] text-[#111]">
               LANJ helps organisations:
             </h3>
             <p className="mt-4 text-lg leading-7 text-[#5c5c5c]">
@@ -279,12 +279,17 @@ const Target = ({
             </p>
           </div>
           <ul className="border-t border-black/10">
-            {benefits.map((benefit) => (
+            {benefits.map((benefit, i) => (
               <li
                 key={benefit}
-                className="border-b border-black/10 py-4 text-lg leading-7 text-[#3a3a3a]"
+                className="grid grid-cols-[48px_1fr] items-baseline border-b border-black/10 py-6"
               >
-                {benefit}
+                <span className="text-sm tabular-nums text-[#8a8a8a]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-xl leading-snug tracking-tight text-[#202020]">
+                  {benefit}
+                </span>
               </li>
             ))}
           </ul>
