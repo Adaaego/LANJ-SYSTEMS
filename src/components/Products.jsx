@@ -96,7 +96,7 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="w-full bg-gradient-to-br from-white via-white to-gray-100/30 pt-10 pb-24 px-6 md:px-10 lg:px-16 xl:px-20 scroll-mt-20"
+      className="w-full bg-gradient-to-br from-white via-white to-gray-100/30 pt-10 pb-10 px-6 md:px-10 lg:px-16 xl:px-20 scroll-mt-20"
     >
       <div className="w-full mx-auto">
 
