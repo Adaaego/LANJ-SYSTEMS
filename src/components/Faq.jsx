@@ -6,9 +6,9 @@ import { Plus } from "lucide-react";
 // Default FAQ Content
 const defaultFAQs = [
   {
-    question: "Does LANJ build software for specific industries?",
+    question: "Does LANJ only build for the petroleum sector?",
     answer:
-      "We build enterprise and institutional software for organisations with complex operations. Our current focus is Ghana's downstream petroleum sector through OpsEye, and we will expand to other areas as we learn where our approach adds the most value.",
+      "OpsEye, our first product, focuses on the downstream petroleum sector. Our wider aim is to build data systems across sectors such as agriculture, healthcare, finance, transport and public administration, expanding deliberately as we understand each one.",
   },
   {
     question: "Does LANJ work with regulators?",
