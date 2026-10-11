@@ -1,9 +1,10 @@
+
 import { motion } from "framer-motion";
 
 const Hero = ({
   headline = "LANJ Systems",
-  tagline = "Software for complex operations.",
-  subheadline = "We build enterprise and institutional software that helps organisations manage operations, workflows, data and decision-making.",
+  tagline = "We build world-class products and data systems that help power Africa differently.",
+  subheadline = "We turn fragmented, unreliable and underused information into structured data, dependable systems and actionable intelligence.",
   primaryButtonText = "Explore OpsEye",
   primaryButtonHref = "#products",
   secondaryButtonText = "Get in touch",
