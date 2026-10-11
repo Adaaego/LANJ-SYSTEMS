@@ -214,7 +214,7 @@ const About = () => {
                 fontWeight: 400,
               }}
             >
-              LANJ Systems is a technology company{" "}
+              LANJ Systems builds data infrastructure for Africa's most complex industries.{" "}
               <span className="opacity-40">
                 focused on turning fragmented, unreliable and
                 underused information into structured data,

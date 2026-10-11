@@ -4,8 +4,8 @@ const FONT = { fontFamily: "Figtree, sans-serif" };
 
 const Hero = ({
   headline = "LANJ Systems",
-  tagline = "We build world-class products and data systems that help power Africa differently.",
-  subheadline = "We turn fragmented, unreliable and underused information into structured data, dependable systems and actionable intelligence.",
+  tagline = "Data infrastructure for Africa’s most complex industries.",
+  subheadline = "Messy processes. Fragmented data. Broken systems. We build the infrastructure that fixes them.",
   primaryButtonText = "Explore OpsEye",
   primaryButtonHref = "#products",
   secondaryButtonText = "Get in touch",
