@@ -108,7 +108,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading - Original Two-Tone Style */}
             <h2
               className="text-3xl sm:text-[40px] font-normal leading-tight tracking-tight text-[#202020] mb-6"
               style={{
@@ -116,11 +116,11 @@ const About = () => {
                 fontWeight: 400,
               }}
             >
-              LANJ Systems is a software company based in
-              Accra, Ghana,{" "}
+              LANJ Systems is a technology company{" "}
               <span className="opacity-40">
-                building enterprise and institutional software
-                for organisations that run complex operations.
+                focused on turning fragmented, unreliable and
+                underused information into structured data,
+                dependable systems and actionable intelligence.
               </span>
             </h2>
 
@@ -132,16 +132,16 @@ const About = () => {
               }}
             >
               <p className="text-lg leading-6 text-[#202020] opacity-60 m-0">
-                We focus on systems that bring operational data
-                together, make it reliable, and turn it into
-                intelligence people can act on.
+                We take messy, fragmented processes and turn them
+                into clean, structured, queryable data that helps
+                organisations make better decisions.
               </p>
 
               <p className="text-lg leading-6 text-[#202020] opacity-60 m-0">
-                We design around the realities of the markets
-                we serve, from patchy connectivity to mixed
-                equipment and manual processes, so our software
-                works where it is actually used.
+                We don't just build software to solve isolated
+                problems. We build systems that improve how
+                industries operate, how resources are managed
+                and how economies grow.
               </p>
             </div>
 
